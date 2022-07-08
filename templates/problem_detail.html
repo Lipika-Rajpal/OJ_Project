@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ problem.name }}</title>
+</head>
+<body>
+
+{{ problem.statement }}
+<br>
+<br>
+
+TESTCASES:
+<br>
+<br>
+
+<li>INPUT</li>
+{% for object in problem.tc.all %}
+    {{ object.input }}
+{% endfor %}
+<br>
+<li>OUTPUT</li>
+{% for object in problem.tc.all %}
+    {{ object.output }}
+{% endfor %}
+
+
+
+</body>
+</html>
